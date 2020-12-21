@@ -1,23 +1,15 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import * as THREE from '/build/three.module.js';
+import * as Tone from 'tone';
 import { OrbitControls } from '/jsm/controls/OrbitControls';
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const synth = new Tone.Synth().toDestination();
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 const controls = new OrbitControls(camera, renderer.domElement);
-const listener = new THREE.AudioListener();
-camera.add(listener);
-const audio = new THREE.Audio(listener);
-const file = 'static/sounds/Chandra X-ray Observatory_ Galactic Sonification.mp3';
-const loader = new THREE.AudioLoader();
-loader.load(file, function (buffer) {
-    audio.setBuffer(buffer);
-    audio.play();
-});
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshNormalMaterial();
 const cube = new THREE.Mesh(geometry, material);
@@ -47,7 +39,7 @@ const animate = () => {
     if (intersects.length > 0) {
         const { distance, face, object } = intersects[0] || {};
         const { materialIndex } = face || {};
-        console.log(materialIndex);
+        synth.triggerAttackRelease('C4', '8n');
     }
     render();
 };

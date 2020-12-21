@@ -12,7 +12,7 @@ class App {
     this.port = port
     const app = express()
     app.use(express.static(path.join(__dirname, '../client')))
-    app.use(express.static(path.join(__dirname, '../public')))
+    app.use(express.static(path.join(__dirname, '../../node_modules/')))
     app.use(
       '/build/three.module.js',
       express.static(path.join(__dirname, '../../node_modules/three/build/three.module.js')),

@@ -786,6 +786,166 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tonaljs/abc-notation@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/abc-notation/-/abc-notation-4.5.1.tgz#7efc562e43badd8e682131c8d9bbeb7ad4d047fb"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+
+"@tonaljs/array@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/array/-/array-4.5.1.tgz#afdfe9143d3741ebf2d9f70e8b9d157ddcab416c"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+
+"@tonaljs/chord-detect@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/chord-detect/-/chord-detect-4.5.1.tgz#a393c31c7d169aceaddbb9df7a05407f0ea298c2"
+  dependencies:
+    "@tonaljs/chord-type" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/pcset" "^4.5.1"
+
+"@tonaljs/chord-type@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/chord-type/-/chord-type-4.5.1.tgz#c92dfb04517816c771cd829c690134bf5494e235"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/pcset" "^4.5.1"
+
+"@tonaljs/chord@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/chord/-/chord-4.5.1.tgz#4ea3cfa60a3066faf7aa8afb5cc5e182d9fda1fc"
+  dependencies:
+    "@tonaljs/chord-detect" "^4.5.1"
+    "@tonaljs/chord-type" "^4.5.1"
+    "@tonaljs/collection" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/pcset" "^4.5.1"
+    "@tonaljs/scale-type" "^4.5.1"
+
+"@tonaljs/collection@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/collection/-/collection-4.5.1.tgz#8ca162020f1cd62078e38cc6c30dfb32a9837b8a"
+
+"@tonaljs/core@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/core/-/core-4.5.1.tgz#7297a75c0a8fce6feda836b2e1aec93bfd1c83fb"
+
+"@tonaljs/duration-value@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/duration-value/-/duration-value-4.5.1.tgz#cd2149486896d3a9457ada31f41e49a65c6cb6c8"
+
+"@tonaljs/interval@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/interval/-/interval-4.5.1.tgz#845db15e474f25abe3b839c27da06e2d815f4646"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+
+"@tonaljs/key@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@tonaljs/key/-/key-4.6.0.tgz#6852ead6c0f62900aa3d28f9f13ea878b2a68500"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/note" "^4.6.0"
+    "@tonaljs/roman-numeral" "^4.5.1"
+
+"@tonaljs/midi@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/midi/-/midi-4.5.1.tgz#9e6a07b7dfd1584d7df41bc0d648ae8a946e4fb7"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+
+"@tonaljs/mode@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/mode/-/mode-4.5.1.tgz#d86fb2da97868ab609d2ed05c434ac5b79181e60"
+  dependencies:
+    "@tonaljs/collection" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/interval" "^4.5.1"
+    "@tonaljs/pcset" "^4.5.1"
+
+"@tonaljs/note@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@tonaljs/note/-/note-4.6.0.tgz#a52b74dfb415429ca38ea86dc6e8f486cc87375e"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/midi" "^4.5.1"
+
+"@tonaljs/pcset@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/pcset/-/pcset-4.5.1.tgz#83b7ff5e998a1de2302c3857aa1d093c364fb2ab"
+  dependencies:
+    "@tonaljs/collection" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+
+"@tonaljs/progression@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/progression/-/progression-4.5.1.tgz#3ad494081bb7f00d2d9a35df9e35c371a0427052"
+  dependencies:
+    "@tonaljs/chord" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/roman-numeral" "^4.5.1"
+
+"@tonaljs/range@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/range/-/range-4.5.1.tgz#7062b991d7d03789a3829fe079134d699251b11a"
+  dependencies:
+    "@tonaljs/collection" "^4.5.1"
+    "@tonaljs/midi" "^4.5.1"
+
+"@tonaljs/roman-numeral@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/roman-numeral/-/roman-numeral-4.5.1.tgz#8361b7cbd0db939a773de2b36690bea411568f75"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+
+"@tonaljs/scale-type@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/scale-type/-/scale-type-4.5.1.tgz#95458daa6dd7013d03a2d667442fe08ce7a31078"
+  dependencies:
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/pcset" "^4.5.1"
+
+"@tonaljs/scale@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@tonaljs/scale/-/scale-4.6.0.tgz#cf957f639bc1cb2d310e03be89ce56ebb394ef95"
+  dependencies:
+    "@tonaljs/chord-type" "^4.5.1"
+    "@tonaljs/collection" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/note" "^4.6.0"
+    "@tonaljs/pcset" "^4.5.1"
+    "@tonaljs/scale-type" "^4.5.1"
+
+"@tonaljs/time-signature@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@tonaljs/time-signature/-/time-signature-4.5.1.tgz#14cad7ad4876891a553829e964b9ce701713bb59"
+
+"@tonaljs/tonal@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@tonaljs/tonal/-/tonal-4.6.0.tgz#bfa5cd3753bc8f6a9dc6d23c0eb0cec9b0843168"
+  dependencies:
+    "@tonaljs/abc-notation" "^4.5.1"
+    "@tonaljs/array" "^4.5.1"
+    "@tonaljs/chord" "^4.5.1"
+    "@tonaljs/chord-type" "^4.5.1"
+    "@tonaljs/collection" "^4.5.1"
+    "@tonaljs/core" "^4.5.1"
+    "@tonaljs/duration-value" "^4.5.1"
+    "@tonaljs/interval" "^4.5.1"
+    "@tonaljs/key" "^4.6.0"
+    "@tonaljs/midi" "^4.5.1"
+    "@tonaljs/mode" "^4.5.1"
+    "@tonaljs/note" "^4.6.0"
+    "@tonaljs/pcset" "^4.5.1"
+    "@tonaljs/progression" "^4.5.1"
+    "@tonaljs/range" "^4.5.1"
+    "@tonaljs/roman-numeral" "^4.5.1"
+    "@tonaljs/scale" "^4.6.0"
+    "@tonaljs/scale-type" "^4.5.1"
+    "@tonaljs/time-signature" "^4.5.1"
+
 "@types/anymatch@*":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"

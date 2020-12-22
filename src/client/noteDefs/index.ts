@@ -1,8 +1,8 @@
-import { Key, Note } from '@tonaljs/tonal'
+import { Key } from '@tonaljs/tonal'
 
-export const majorKeys = [
+export const majorScales = Object.fromEntries([
   'C'
-].map(str => Key.majorKey(str))
-.map(({ scale }) => ({
-  scale
+].map(str => {
+  const { scale } = Key.majorKey(str)
+  return [str, scale]
 }))

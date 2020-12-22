@@ -18,10 +18,10 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    indent: ['error', 2],
+    indent: ['warning', 2],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
+    quotes: ['warning', 'single'],
+    semi: ['warning', 'never'],
     'class-methods-use-this': 1,
     'no-empty': 1,
     'no-fallthrough': 1,

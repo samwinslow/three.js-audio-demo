@@ -1,29 +1,25 @@
 import express from 'express'
 import path from 'path'
-import http from 'http'
+import webpack from 'webpack'
+import * as webpackDevMiddleware from 'webpack-dev-middleware'
+import * as webpackHotMiddleware from 'webpack-hot-middleware'
+import config from '../../webpack.config.js'
 
 const port = 3030
+const app = express()
 
-class App {
-  private server: http.Server
-  private port: number
+const devServerEnabled = true
 
-  constructor(port: number) {
-    this.port = port
-    const DIST_DIR = path.join(__dirname, '../client')
-    const app = express()
-    app.use(express.static(DIST_DIR))
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(DIST_DIR, 'index.html'))
-  })
-    this.server = new http.Server(app)
-  }
-
-  public Start() {
-    this.server.listen(this.port, () => {
-      console.log(`Server listening on port ${this.port}.`)
-    })
-  }
+if (devServerEnabled) {
+  config.plugins.push(new webpack.HotModuleReplacementPlugin())
+  const compiler = webpack(config)
+  app.use(webpackDevMiddleware(compiler))
+  app.use(webpackHotMiddleware(compiler))
 }
 
-new App(port).Start()
+const DIST_DIR = path.join(__dirname, '../client')
+app.use(express.static(DIST_DIR))
+app.get('*', (req, res) => { res.sendFile(path.join(DIST_DIR, 'index.html')) })
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}.`)
+})

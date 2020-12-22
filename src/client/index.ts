@@ -35,7 +35,7 @@ const onDocumentMouseMove = ({ clientX, clientY }: { clientX: number; clientY: n
   mouse.y = -(clientY / window.innerHeight) * 2 + 1
 }
 const onDomClick = () => {
-  console.log('dom click')
+  console.log('dom clicked!!')
   synth.triggerAttackRelease('C4', '8n')
 }
 window.addEventListener('resize', onWindowResize, false)

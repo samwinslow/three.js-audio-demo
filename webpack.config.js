@@ -25,9 +25,7 @@ module.exports = [
       path: __dirname + '/dist/server',
       filename: 'bundle.js',
     },
-    externals: {
-      fsevents: "require('fsevents')"
-    }
+    plugins: []
   },
   {
     name: 'client',
